@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+  <script>
+  const loginUser = sessionStorage.getItem("loginUser");
+
+  // 페이지별 허용된 사용자 체크
+  const isAdminPage = location.pathname.includes("admin");
+  const isUserPage = location.pathname.includes("user");
+
+  if ((isAdminPage && loginUser !== "openlink") || (isUserPage && loginUser !== "HCS")) {
+    alert("로그인이 필요합니다.");
+    window.location.href = "login.html";
+  }
+</script>
   <meta charset="UTF-8">
   <title>오픈링크 협력사 현황</title>
   <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=y42tkwc67w&submodules=geocoder"></script>
