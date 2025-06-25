@@ -1,0 +1,39 @@
+<!-- user.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>사용자 페이지</title>
+</head>
+<body>
+  <h2>협력사 현황 - 사용자 페이지</h2>
+  <div id="map" style="width:100%; height:600px;"></div>
+
+  <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=YOUR_CLIENT_ID"></script>
+  <script>
+    const map = new naver.maps.Map('map', {
+      center: new naver.maps.LatLng(37.5665, 126.9780),
+      zoom: 10
+    });
+
+    // 예시용 마커 데이터. 실제 서버 DB연동 필요
+    const markers = [
+      { name: "A공업사", lat: 37.5665, lng: 126.9780 },
+      { name: "B공업사", lat: 37.5700, lng: 126.9900 }
+    ];
+
+    markers.forEach(item => {
+      const marker = new naver.maps.Marker({
+        position: new naver.maps.LatLng(item.lat, item.lng),
+        map: map
+      });
+      const infowindow = new naver.maps.InfoWindow({
+        content: `<div style='padding:10px;'>${item.name}</div>`
+      });
+      naver.maps.Event.addListener(marker, 'click', () => {
+        infowindow.open(map, marker);
+      });
+    });
+  </script>
+</body>
+</html>

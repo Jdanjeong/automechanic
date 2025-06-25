@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>관리자 페이지 - 협력사 업로드</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <h2>협력사 업로드 및 목록 확인 (관리자 전용)</h2>
+  <input type="file" id="excelFile" accept=".xlsx">
+  <div id="tableContainer"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script>
+    document.getElementById('excelFile').addEventListener('change', function (e) {
+      const file = e.target.files[0];
+      const reader = new FileReader();
+
+      reader.onload = function (event) {
+        const data = new Uint8Array(event.target.result);
+        const workbook = XLSX.read(data, { type: 'array' });
+        const sheet = workbook.Sheets[workbook.SheetNames[0]];
+        const json = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+
+        let html = '<table><thead><tr>';
+        json[0].forEach(cell => html += `<th>${cell}</th>`);
+        html += '</tr></thead><tbody>';
+        for (let i = 1; i < json.length; i++) {
+          html += '<tr>' + json[i].map(cell => `<td>${cell || ''}</td>`).join('') + '</tr>';
+        }
+        html += '</tbody></table>';
+
+        document.getElementById('tableContainer').innerHTML = html;
+      };
+
+      reader.readAsArrayBuffer(file);
+    });
+  </script>
+</body>
+</html>
