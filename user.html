@@ -111,25 +111,32 @@
       return '<span style="color:#6b7280;">-</span>';
     }
 
-    function showFactoryInfo(factory) {
-      document.getElementById('factory-info').innerHTML = `
-        <div class="info-card">
-          <div class="title">🚗 ${factory.name}</div>
-          <div class="sub-info">📍 ${factory.address}</div>
-          <div class="sub-info">🏷️ 등급: <strong>${factory.grade}</strong> &nbsp;&nbsp; ☎️ 연락처: <strong>${factory.phone || '-'}</strong></div>
-          <div class="info-section"><strong>🛠️ 수리 가능여부</strong><div class="info-tags">
-              <span class="info-tag">일반수리: ${getStatusTag(factory.repairGeneral)}</span>
-              <span class="info-tag">사고수리: ${getStatusTag(factory.repairAccident)}</span></div></div>
-          <div class="info-section"><strong>📦 입고 정보</strong><div class="info-tags">
-              <span class="info-tag">🔧 월수리: ${factory.monthlyCapacity}</span>
-              <span class="info-tag">📥 현재입고: ${factory.currentIncoming}</span>
-              <span class="info-tag">🚚 입고가능: ${factory.possibleIncoming}</span></div></div>
-          <div class="info-section"><strong>🏭 제조사 포인트</strong><div class="info-tags">
-              <span class="info-tag">현대: ${getStatusTag(factory.pointHyundai)}</span>
-              <span class="info-tag">기아: ${getStatusTag(factory.pointKia)}</span></div></div>
-          ${factory.notes && factory.notes !== '0' ? `<div class="info-section"><strong>📝 참고사항</strong><div style="margin-top: 5px;">${factory.notes}</div></div>` : ''}
-        </div>`;
-    }
+function showFactoryInfo(factory) {
+  console.log("✅ 전달된 factory 객체:", factory);
+
+  if (!factory) {
+    alert("⚠️ 공업사 정보를 불러오지 못했습니다.");
+    return;
+  }
+
+  document.getElementById('factory-info').innerHTML = `
+    <div class="info-card">
+      <div class="title">🚗 ${factory.name}</div>
+      <div class="sub-info">📍 ${factory.address}</div>
+      <div class="sub-info">🏷️ 등급: <strong>${factory.grade}</strong> &nbsp;&nbsp; ☎️ 연락처: <strong>${factory.phone || '-'}</strong></div>
+      <div class="info-section"><strong>🛠️ 수리 가능여부</strong><div class="info-tags">
+          <span class="info-tag">일반수리: ${getStatusTag(factory.repairGeneral)}</span>
+          <span class="info-tag">사고수리: ${getStatusTag(factory.repairAccident)}</span></div></div>
+      <div class="info-section"><strong>📦 입고 정보</strong><div class="info-tags">
+          <span class="info-tag">🔧 월수리: ${factory.monthlyCapacity}</span>
+          <span class="info-tag">📥 현재입고: ${factory.currentIncoming}</span>
+          <span class="info-tag">🚚 입고가능: ${factory.possibleIncoming}</span></div></div>
+      <div class="info-section"><strong>🏭 제조사 포인트</strong><div class="info-tags">
+          <span class="info-tag">현대: ${getStatusTag(factory.pointHyundai)}</span>
+          <span class="info-tag">기아: ${getStatusTag(factory.pointKia)}</span></div></div>
+      ${factory.notes && factory.notes !== '0' ? `<div class="info-section"><strong>📝 참고사항</strong><div style="margin-top: 5px;">${factory.notes}</div></div>` : ''}
+    </div>`;
+}
 
     function loadFactoryJson() {
       fetch('https://jdanjeong.github.io/automechanic/factory.json')
