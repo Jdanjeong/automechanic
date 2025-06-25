@@ -26,10 +26,13 @@
 <body>
   <h2>협력사 업로드 및 목록 확인 (관리자 전용)</h2>
   <input type="file" id="excelFile" accept=".xlsx">
+  <button onclick="downloadJSON()">📥 저장 (factory.json)</button>
   <div id="tableContainer"></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
   <script>
+    let jsonData = [];
+
     document.getElementById('excelFile').addEventListener('change', function (e) {
       const file = e.target.files[0];
       const reader = new FileReader();
@@ -38,21 +41,38 @@
         const data = new Uint8Array(event.target.result);
         const workbook = XLSX.read(data, { type: 'array' });
         const sheet = workbook.Sheets[workbook.SheetNames[0]];
-        const json = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+        const raw = XLSX.utils.sheet_to_json(sheet, { header: 1 });
 
+        // 테이블 생성
         let html = '<table><thead><tr>';
-        json[0].forEach(cell => html += `<th>${cell}</th>`);
+        raw[0].forEach(cell => html += `<th>${cell}</th>`);
         html += '</tr></thead><tbody>';
-        for (let i = 1; i < json.length; i++) {
-          html += '<tr>' + json[i].map(cell => `<td>${cell || ''}</td>`).join('') + '</tr>';
+
+        jsonData = []; // 초기화 후 jsonData에 저장
+        for (let i = 1; i < raw.length; i++) {
+          let obj = {};
+          raw[0].forEach((key, j) => {
+            obj[key] = raw[i][j] || '';
+          });
+          jsonData.push(obj);
+
+          html += '<tr>' + raw[i].map(cell => `<td>${cell || ''}</td>`).join('') + '</tr>';
         }
         html += '</tbody></table>';
-
         document.getElementById('tableContainer').innerHTML = html;
       };
 
       reader.readAsArrayBuffer(file);
     });
+
+    function downloadJSON() {
+      const blob = new Blob([JSON.stringify(jsonData, null, 2)], { type: 'application/json' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'factory.json';
+      link.click();
+    }
   </script>
 </body>
 </html>
+
