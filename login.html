@@ -103,8 +103,10 @@
       const pw = document.getElementById('password').value;
 
       if (id === 'openlink' && pw === 'openlink0947') {
+        sessionStorage.setItem("loginUser", "openlink");
         window.location.href = 'admin.html';
       } else if (id === 'HCS' && pw === '1234') {
+        sessionStorage.setItem("loginUser", "HCS");
         window.location.href = 'user.html';
       } else {
         alert('아이디 또는 비밀번호를 확인해주세요.');
