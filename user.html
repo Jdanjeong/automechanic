@@ -132,7 +132,7 @@
     }
 
     function loadFactoryJson() {
-      fetch('factory.json')
+      fetch('https://jdanjeong.github.io/automechanic/factory.json')
         .then(res => res.json())
         .then(data => {
           factories = data;
