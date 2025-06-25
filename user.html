@@ -90,7 +90,13 @@
       <table id="factory-table">
         <thead>
           <tr>
-            <th>공업사명</th><th>거리(km)</th><th>일반수리</th><th>사고수리</th>
+            <th style="width: 25%;">공업사명</th>
+            <th style="width: 13%;">입고우선순위</th>
+            <th style="width: 12%;">거리(km)</th>
+            <th style="width: 12%;">일반수리</th>
+            <th style="width: 12%;">사고수리</th>
+            <th style="width: 13%;"><img class="point-icon" src="현대로고" alt="현대" /></th>
+            <th style="width: 13%;"><img class="point-icon" src="기아로고" alt="기아" /></th>
             <th><img class="point-icon" src="https://i.namu.wiki/i/r6Nfd2W4VJfQJd0rMjfHzjzOjZD2HbWGsxHdaTh4aPqN8S1Dsp74jVYCwdXUcu9ry-6jzm5_JDWl7OmjIEaSMuPAnJr0WATQq0JLGrvgewEiKPC99V9c3MJThzQyXLQEDA2AOBqbn0cn-9tAhR5cnw.svg" alt="현대" />
             </th>
             <th><img class="point-icon" src="https://i.namu.wiki/i/LPxAPP6P7emfhzu6bzsn19bP1ZZXn2jshG9OPQ3z8P8oSnRbqsTV-mXvJYTzubY831Dh_-MPLWrNxg2_a5aQfe1nzq_Fst_fghKDKHA6TtheVMkKLhwsUdsF8VdcTBJgB4Qz9juN_kOPZ5PCnci1Lw.svg" alt="기아" /></th>
@@ -183,6 +189,7 @@ function showFactoryInfo(factory) {
         const tr = document.createElement('tr');
         tr.innerHTML = `
           <td>${f.name}</td>
+          <td>${f.priority || '-'}</td>
           <td>${f.dist.toFixed(2)}</td>
           <td>${getStatusTag(f.repairGeneral)}</td>
           <td>${getStatusTag(f.repairAccident)}</td>
