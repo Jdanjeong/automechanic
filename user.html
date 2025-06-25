@@ -1,39 +1,129 @@
-<!-- user.html -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>사용자 페이지</title>
+  <title>오픈링크 협력사 현황</title>
+  <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=y42tkwc67w"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    #map {
+      width: 100%;
+      height: 500px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+    }
+    input[type="text"] {
+      padding: 8px;
+      width: 250px;
+    }
+    button {
+      padding: 8px 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
 </head>
 <body>
-  <h2>협력사 현황 - 사용자 페이지</h2>
-  <div id="map" style="width:100%; height:600px;"></div>
+  <h2>🏢 오픈링크 협력사 현황</h2>
 
-  <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=YOUR_CLIENT_ID"></script>
+  <input type="text" id="addressInput" placeholder="주소 입력">
+  <button onclick="searchAddress()">🔍 검색</button>
+
+  <div id="map"></div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>공업사명</th>
+        <th>주소</th>
+        <th>등급</th>
+        <th>연락처</th>
+      </tr>
+    </thead>
+    <tbody id="factory-table"></tbody>
+  </table>
+
   <script>
-    const map = new naver.maps.Map('map', {
-      center: new naver.maps.LatLng(37.5665, 126.9780),
-      zoom: 10
-    });
+    let map;
 
-    // 예시용 마커 데이터. 실제 서버 DB연동 필요
-    const markers = [
-      { name: "A공업사", lat: 37.5665, lng: 126.9780 },
-      { name: "B공업사", lat: 37.5700, lng: 126.9900 }
-    ];
+    function initMap() {
+      map = new naver.maps.Map('map', {
+        center: new naver.maps.LatLng(36.5, 127.5), // 대한민국 중심
+        zoom: 8
+      });
 
-    markers.forEach(item => {
-      const marker = new naver.maps.Marker({
-        position: new naver.maps.LatLng(item.lat, item.lng),
-        map: map
+      // ✅ JSON 파일 경로: GitHub 등에 업로드한 factories.json 경로로 수정
+      fetch('https://jdanjeong.github.io/openlink-map/upadd_공.json')
+        .then(response => response.json())
+        .then(data => {
+          data.forEach(factory => {
+            const marker = new naver.maps.Marker({
+              position: new naver.maps.LatLng(factory.lat, factory.lng),
+              map: map
+            });
+
+            const infowindow = new naver.maps.InfoWindow({
+              content: `<div style="padding:10px; max-width:200px;">
+                          <strong>${factory.name}</strong><br>
+                          ${factory.address}<br>
+                          연락처: ${factory.phone || '없음'}
+                        </div>`
+            });
+
+            naver.maps.Event.addListener(marker, "click", () => {
+              infowindow.open(map, marker);
+            });
+
+            const row = document.createElement('tr');
+            row.innerHTML = `
+              <td>${factory.name}</td>
+              <td>${factory.address}</td>
+              <td>${factory.grade || '-'}</td>
+              <td>${factory.phone || '-'}</td>
+            `;
+            document.getElementById('factory-table').appendChild(row);
+          });
+        })
+        .catch(error => {
+          alert("공업사 데이터를 불러오는 데 실패했습니다.");
+          console.error(error);
+        });
+    }
+
+    function searchAddress() {
+      const query = document.getElementById("addressInput").value;
+      if (!query) return;
+
+      naver.maps.Service.geocode({ query }, function(status, response) {
+        if (status !== naver.maps.Service.Status.OK) {
+          return alert("주소를 찾을 수 없습니다.");
+        }
+        const result = response.v2.addresses[0];
+        const point = new naver.maps.LatLng(result.y, result.x);
+        map.setCenter(point);
+        map.setZoom(12);
       });
-      const infowindow = new naver.maps.InfoWindow({
-        content: `<div style='padding:10px;'>${item.name}</div>`
-      });
-      naver.maps.Event.addListener(marker, 'click', () => {
-        infowindow.open(map, marker);
-      });
-    });
+    }
+
+    window.onload = initMap;
   </script>
 </body>
 </html>
