@@ -25,7 +25,6 @@
     .login-box img {
       height: 30px;
       vertical-align: middle;
-      margin-right: 5px;
     }
 
     .login-box h2 {
@@ -35,10 +34,11 @@
       color: #333;
     }
 
-    input[type="text"], input[type="password"] {
-      width: 100%;
+    select, input[type="password"] {
+      width: 80%;
       padding: 10px 12px;
-      margin: 10px 0;
+      margin: 10px auto;
+      display: block;
       border: 1px solid #ccc;
       border-radius: 5px;
       font-size: 14px;
@@ -66,6 +66,12 @@
       align-items: center;
       gap: 8px;
     }
+
+    .logo-row .divider {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
   </style>
 </head>
 <body>
@@ -73,13 +79,18 @@
   <div class="login-box">
     <div class="logo-row">
       <img src="https://i.namu.wiki/i/RsDHmNoXGs6p8VaBo1cgdK_QcJzxYn_X_0nQY6cPsYl2oDma8yNgrYMR20FcuzT6mBBktZj8UYx9EvmFErW-FDPaHk9x6ivg1duyn3wsXRS-cUEKBUP75gfcUeFT4objzjYkgpwN6Dus0o-ucjpZ2w.svg" alt="HCS Logo">
+      <span style="font-size: 22px; font-weight: bold; color: #333;">X</span>
       <img src="https://taksong-driver.openmile.kr/openlink.png" alt="Openlink Logo" style="height: 20px;">
     </div>
 
     <h2>오픈링크 협력사 현황</h2>
 
     <form onsubmit="return login(event)">
-      <input type="text" id="username" placeholder="아이디" required>
+      <select id="username" required>
+        <option value="" disabled selected>사용자 유형 선택</option>
+        <option value="HCS">사용자</option>
+        <option value="openlink">관리자</option>
+      </select>
       <input type="password" id="password" placeholder="비밀번호" required>
       <button type="submit">로그인</button>
     </form>
@@ -100,6 +111,9 @@
       }
     }
   </script>
+</body>
+</html>
+
 
 </body>
 </html>
