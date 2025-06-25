@@ -3,124 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <title>오픈링크 협력사 현황</title>
-  <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=y42tkwc67w"></script>
+  <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=y42tkwc67w&submodules=geocoder"></script>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    h2 {
-      margin-bottom: 10px;
-    }
-    #map {
-      width: 100%;
-      height: 500px;
-      margin-top: 10px;
-      border: 1px solid #ccc;
-    }
-    input[type="text"] {
-      padding: 8px;
-      width: 250px;
-    }
-    button {
-      padding: 8px 12px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 15px;
-      font-size: 14px;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: center;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
+    /* 스타일은 기존 automechanic.html과 동일하게 유지 */
+    body { font-family: 'Arial', sans-serif; margin: 20px; }
+    #map { width: 100%; height: 600px; border-radius: 8px; margin-top: 10px; }
+    .radius-buttons button { margin-right: 10px; padding: 5px 10px; border-radius: 5px; background-color: #e0e7ff; border: none; cursor: pointer; }
+    .radius-buttons button:hover { background-color: #c7d2fe; }
+    input[type="text"] { padding: 6px; border-radius: 4px; border: 1px solid #ccc; width: 200px; }
+    button { padding: 6px 10px; border-radius: 4px; background-color: #38bdf8; color: white; border: none; cursor: pointer; }
+    button:hover { background-color: #0ea5e9; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: clamp(12px, 1.1vw, 16px); table-layout: fixed; }
+    th, td { padding: 10px; text-align: center; border-bottom: 1px solid #ddd; word-break: break-word; }
+    th { background-color: #eef2ff; }
+    .info-card { padding: 15px; border: 1px solid #ddd; border-radius: 10px; background: #fff; margin-top: 10px; }
   </style>
 </head>
 <body>
+  <img src="https://taksong-driver.openmile.kr/openlink.png" style="width: 139px; height: 22px;" />
   <h2>🏢 오픈링크 협력사 현황</h2>
 
-  <input type="text" id="addressInput" placeholder="주소 입력">
-  <button onclick="searchAddress()">🔍 검색</button>
+  <div>
+    <input type="text" id="addressInput" placeholder="🔍 주소 입력">
+    <button onclick="searchAddress()">검색</button>
+    <span>또는 🗺️ 지도 클릭으로 선택</span>
+  </div>
+
+  <div class="radius-buttons">
+    <label>📏 반경:</label>
+    <button onclick="setRadius(5)">5km</button>
+    <button onclick="setRadius(10)">10km</button>
+    <button onclick="setRadius(20)">20km</button>
+  </div>
 
   <div id="map"></div>
+
+  <div id="clicked-address">📍 표시지점의 주소가 표시됩니다.</div>
+  <div id="clicked-location">📍 선택된 위치: 없음</div>
+  <div id="factory-info">ℹ️ 협력사 정보가 여기에 표시됩니다.</div>
 
   <table>
     <thead>
       <tr>
         <th>공업사명</th>
-        <th>주소</th>
-        <th>등급</th>
-        <th>연락처</th>
+        <th>거리(km)</th>
+        <th>일반수리</th>
+        <th>사고수리</th>
+        <th>현대</th>
+        <th>기아</th>
       </tr>
     </thead>
-    <tbody id="factory-table"></tbody>
+    <tbody id="factory-list"></tbody>
   </table>
 
   <script>
-    let map;
+    let map, radius = 10, circle = null, selectedMarker = null;
+    let factories = [], markers = [];
 
-    function initMap() {
-      map = new naver.maps.Map('map', {
-        center: new naver.maps.LatLng(36.5, 127.5), // 대한민국 중심
-        zoom: 8
-      });
+    function getStatusTag(flag) {
+      if (flag === '○') return '✅';
+      if (flag === 'Ⅹ' || flag === 'X') return '❌';
+      return '-';
+    }
 
-      // ✅ JSON 파일 경로: GitHub 등에 업로드한 factories.json 경로로 수정
-      fetch('https://jdanjeong.github.io/automechanic/factory.json')
-        .then(response => response.json())
-        .then(data => {
-          data.forEach(factory => {
-            const marker = new naver.maps.Marker({
-              position: new naver.maps.LatLng(factory.lat, factory.lng),
-              map: map
-            });
+    function showFactoryInfo(f) {
+      document.getElementById("factory-info").innerHTML = `
+        <div class="info-card">
+          <strong>🚗 ${f.name}</strong><br>
+          📍 ${f.address}<br>
+          ☎️ ${f.phone || '-'}<br>
+          🏷️ 등급: ${f.grade || '-'}<br>
+          📦 월수리: ${f.monthlyCapacity || '-'}, 입고: ${f.currentIncoming || '-'}, 가능: ${f.possibleIncoming || '-'}<br>
+          일반수리: ${getStatusTag(f.repairGeneral)}, 사고수리: ${getStatusTag(f.repairAccident)}<br>
+          현대: ${getStatusTag(f.pointHyundai)}, 기아: ${getStatusTag(f.pointKia)}<br>
+          📝 ${f.notes || ''}
+        </div>`;
+    }
 
-            const infowindow = new naver.maps.InfoWindow({
-              content: `<div style="padding:10px; max-width:200px;">
-                          <strong>${factory.name}</strong><br>
-                          ${factory.address}<br>
-                          연락처: ${factory.phone || '없음'}
-                        </div>`
-            });
+    function haversine(lat1, lng1, lat2, lng2) {
+      const R = 6371e3, toRad = x => x * Math.PI / 180;
+      const dLat = toRad(lat2 - lat1), dLng = toRad(lng2 - lng1);
+      const a = Math.sin(dLat/2)**2 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng/2)**2;
+      return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    }
 
-            naver.maps.Event.addListener(marker, "click", () => {
-              infowindow.open(map, marker);
-            });
+    function updateTableAndMarkers(center) {
+      const tbody = document.getElementById("factory-list");
+      tbody.innerHTML = '';
 
-            const row = document.createElement('tr');
-            row.innerHTML = `
-              <td>${factory.name}</td>
-              <td>${factory.address}</td>
-              <td>${factory.grade || '-'}</td>
-              <td>${factory.phone || '-'}</td>
-            `;
-            document.getElementById('factory-table').appendChild(row);
+      markers.forEach(m => m.setMap(null));
+      markers = [];
+
+      factories.forEach(f => {
+        const dist = haversine(center.lat(), center.lng(), f.lat, f.lng) / 1000;
+        if (dist <= radius) {
+          const marker = new naver.maps.Marker({
+            position: new naver.maps.LatLng(f.lat, f.lng),
+            map
           });
-        })
-        .catch(error => {
-          alert("공업사 데이터를 불러오는 데 실패했습니다.");
-          console.error(error);
-        });
+          marker.addListener("click", () => showFactoryInfo(f));
+          markers.push(marker);
+
+          const row = document.createElement("tr");
+          row.innerHTML = `
+            <td>${f.name}</td>
+            <td>${dist.toFixed(2)}</td>
+            <td>${getStatusTag(f.repairGeneral)}</td>
+            <td>${getStatusTag(f.repairAccident)}</td>
+            <td>${getStatusTag(f.pointHyundai)}</td>
+            <td>${getStatusTag(f.pointKia)}</td>`;
+          row.onclick = () => showFactoryInfo(f);
+          tbody.appendChild(row);
+        }
+      });
+    }
+
+    function drawCircle(center) {
+      if (circle) circle.setMap(null);
+      circle = new naver.maps.Circle({
+        map,
+        center,
+        radius: radius * 1000,
+        strokeColor: "#007aff",
+        strokeWeight: 2,
+        fillColor: "#cce5ff",
+        fillOpacity: 0.4
+      });
     }
 
     function searchAddress() {
       const query = document.getElementById("addressInput").value;
       if (!query) return;
-
       naver.maps.Service.geocode({ query }, function(status, response) {
-        if (status !== naver.maps.Service.Status.OK) {
-          return alert("주소를 찾을 수 없습니다.");
-        }
-        const result = response.v2.addresses[0];
-        const point = new naver.maps.LatLng(result.y, result.x);
-        map.setCenter(point);
-        map.setZoom(12);
+        if (status !== naver.maps.Service.Status.OK) return alert("주소 검색 실패");
+        const item = response.v2.addresses[0];
+        const latlng = new naver.maps.LatLng(item.y, item.x);
+        if (selectedMarker) selectedMarker.setMap(null);
+        selectedMarker = new naver.maps.Marker({ position: latlng, map });
+        map.setCenter(latlng);
+        document.getElementById("clicked-location").innerText = `📍 선택된 위치: ${item.roadAddress || item.jibunAddress}`;
+        drawCircle(latlng);
+        updateTableAndMarkers(latlng);
       });
+    }
+
+    function setRadius(r) {
+      radius = r;
+      if (selectedMarker) {
+        drawCircle(selectedMarker.getPosition());
+        updateTableAndMarkers(selectedMarker.getPosition());
+      }
+    }
+
+    function initMap() {
+      map = new naver.maps.Map("map", {
+        center: new naver.maps.LatLng(36.5, 127.5),
+        zoom: 8
+      });
+
+      fetch("https://jdanjeong.github.io/automechanic/factory.json")
+        .then(res => res.json())
+        .then(data => {
+          factories = data;
+        })
+        .catch(err => alert("데이터 로딩 실패"));
     }
 
     window.onload = initMap;
