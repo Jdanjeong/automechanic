@@ -191,25 +191,30 @@ ${false ? `
     return inRange ? { ...factory, dist } : null;
   }).filter(Boolean);
 
-  // ✅ 입고우선순위 → 거리 기준 정렬
   currentNearby.sort((a, b) => {
-    const pA = parseInt(a.priority || 999);
-    const pB = parseInt(b.priority || 999);
+    const pA = Number.isFinite(parseInt(a.priority)) ? parseInt(a.priority) : 999;
+    const pB = Number.isFinite(parseInt(b.priority)) ? parseInt(b.priority) : 999;
     if (pA !== pB) return pA - pB;
     return a.dist - b.dist;
   });
 
-  // ✅ 테이블 그리기 + 1/2순위 경계선
   let prevPriority = null;
   for (const f of currentNearby) {
-    const tr = document.createElement('tr');
+    const currentPriority = f.priority || '999';
 
-    if (prevPriority !== null && f.priority !== prevPriority) {
-      const divider = document.createElement('tr');
-      divider.innerHTML = `<td colspan="7" style="border-top: 2px dashed #999;"></td>`;
-      tbody.appendChild(divider);
+    if (prevPriority !== null && currentPriority !== prevPriority) {
+      const gapRow = document.createElement('tr');
+      gapRow.innerHTML = `
+        <td colspan="7" style="
+          background-color: #ffe5e5;
+          font-weight: bold;
+          text-align: center;
+        ">↑↑ 우선입고 ↑↑</td>
+      `;
+      tbody.appendChild(gapRow);
     }
 
+    const tr = document.createElement('tr');
     tr.innerHTML = `
       <td>${f.name}</td>
       <td>${f.priority || '-'}</td>
@@ -221,7 +226,8 @@ ${false ? `
     `;
     tr.addEventListener('click', () => showFactoryInfo(f));
     tbody.appendChild(tr);
-    prevPriority = f.priority;
+
+    prevPriority = currentPriority;
   }
 }
 
