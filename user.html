@@ -12,6 +12,12 @@
     alert("로그인이 필요합니다.");
     window.location.href = "login.html";
   }
+  
+  // 제목 변경
+  const pageTitle = document.getElementById("page-title");
+  if (loginUser === "HCS") {
+    pageTitle.innerText = "🏢오픈링크 협력사 현황_HCS";
+  }
 </script>
   <meta charset="UTF-8">
   <title>오픈링크 협력사 현황</title>
@@ -70,7 +76,7 @@
 </head>
 <body>
   <img src="https://taksong-driver.openmile.kr/openlink.png" style="width: 139px; height: 22px;" />
-  <h2>🏢 오픈링크 협력사 현황</h2>
+  <h2 id="page-title">🏢 오픈링크 협력사 현황</h2>
 
   <div style="display:flex; justify-content: space-between; align-items:center;">
     <div>
