@@ -1,29 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<script>
-  const loginUser = sessionStorage.getItem("loginUser");
-
-  // user.html은 openlink, HCS 모두 접근 가능
-  const isUserPage = location.pathname.includes("user");
-
-  // 로그인 사용자 없거나, user.html에 적절한 권한 없이 접근한 경우
-  if (!loginUser || (isUserPage && loginUser !== "openlink" && loginUser !== "HCS")) {
-    alert("로그인이 필요합니다.");
-    window.location.href = "login.html";
-  }
-  
-  // 제목 변경
-  const pageTitle = document.getElementById("page-title");
-  if (loginUser === "HCS") {
-    pageTitle.innerText = "🏢오픈링크 협력사 현황_HCS";
-  }
-</script>
   <meta charset="UTF-8">
   <title>오픈링크 협력사 현황</title>
   <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=y42tkwc67w&submodules=geocoder"></script>
   <style>
-    /* 스타일은 기존 automechanic.html과 동일하게 유지 */
     body { font-family: 'Arial', sans-serif; margin: 20px; }
     #map { width: 100%; height: 600px; border-radius: 8px; margin-top: 10px; }
     #info-box { display: flex; flex-direction: row; justify-content: space-between; padding: 10px; background: #f4f6f8; margin-top: 10px; }
@@ -75,6 +56,20 @@
   </style>
 </head>
 <body>
+  <script>
+    const loginUser = sessionStorage.getItem("loginUser");
+    if (!loginUser || (loginUser !== "openlink" && loginUser !== "HCS")) {
+      alert("로그인이 필요합니다.");
+      window.location.href = "login.html";
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      if (loginUser === "HCS") {
+        document.getElementById("page-title").innerText = "🏢 오픈링크 협력사 현황_HCS";
+      }
+    });
+  </script>
+
   <img src="https://taksong-driver.openmile.kr/openlink.png" style="width: 139px; height: 22px;" />
   <h2 id="page-title">🏢 오픈링크 협력사 현황</h2>
 
@@ -113,11 +108,9 @@
             <th style="width: 14%;">거리(km)</th>
             <th style="width: 14%;">일반수리</th>
             <th style="width: 14%;">사고수리</th>
-            <th style="width: 10%;"><img class="point-icon" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F076%2F2023%2F08%2F16%2F2023081601001169500152491_20230816134704407.jpg&type=sc960_832" alt="현대" />
-            </th>
+            <th style="width: 10%;"><img class="point-icon" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F076%2F2023%2F08%2F16%2F2023081601001169500152491_20230816134704407.jpg&type=sc960_832" alt="현대" /></th>
             <th style="width: 10%;"><img class="point-icon" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAxMTVfNjYg%2FMDAxNjQyMjU1MjgxNDU4.sFc2tIfd0eJqxQQ7Ow6ljDVAvOzM4ygEh58I3o0deFwg.Ysxy_SfwgoG5MDNq2YqGFiQ1as-w-pqCUwqBUlvBLX0g.PNG.ymh0907%2F2560px-KIA_logo3.svg.png&type=sc960_832" alt="기아" /></th>
           </tr>
-                  
         </thead>
         <tbody id="factory-list"></tbody>
       </table>
@@ -134,37 +127,28 @@
       return '<span style="color:#6b7280;">-</span>';
     }
 
-function showFactoryInfo(factory) {
-  console.log("✅ 전달된 factory 객체:", factory);
-
-  if (!factory) {
-    alert("⚠️ 공업사 정보를 불러오지 못했습니다.");
-    return;
-  }
-
-  document.getElementById('factory-info').innerHTML = `
-    <div class="info-card">
-      <div class="title">🚗 ${factory.name}</div>
-      <div class="sub-info">📍 ${factory.address}</div>
-      <div class="sub-info">🏷️ 등급: <strong>${factory.grade}</strong> &nbsp;&nbsp; ☎️ 연락처: <strong>${factory.phone || '-'}</strong></div>
-      <div class="info-section"><strong>🛠️ 수리 가능여부</strong><div class="info-tags">
-          <span class="info-tag">일반수리: ${getStatusTag(factory.repairGeneral)}</span>
-          <span class="info-tag">사고수리: ${getStatusTag(factory.repairAccident)}</span></div></div>
-      <div class="info-section"><strong>📦 입고 정보</strong><div class="info-tags">
-          <span class="info-tag">🔧 월수리: ${factory.monthlyCapacity}</span>
-          <span class="info-tag">📥 현재입고: ${factory.currentIncoming}</span>
-          <span class="info-tag">🚚 입고가능: ${factory.possibleIncoming}</span></div></div>
-      <div class="info-section"><strong>🏭 제조사 포인트</strong><div class="info-tags">
-          <span class="info-tag">현대: ${getStatusTag(factory.pointHyundai)}</span>
-          <span class="info-tag">기아: ${getStatusTag(factory.pointKia)}</span></div></div>
-      ${factory.notes && factory.notes !== '0' ? `<div class="info-section"><strong>📝 참고사항</strong><div style="margin-top: 5px;">${factory.notes}</div></div>` : ''}
-    </div>`;
-}
+    function showFactoryInfo(factory) {
+      document.getElementById('factory-info').innerHTML = `
+        <div class="info-card">
+          <div class="title">🚗 ${factory.name}</div>
+          <div class="sub-info">📍 ${factory.address}</div>
+          <div class="sub-info">🏷️ 등급: <strong>${factory.grade}</strong> &nbsp;&nbsp; ☎️ 연락처: <strong>${factory.phone || '-'}</strong></div>
+          <div class="info-section"><strong>🛠️ 수리 가능여부</strong><div class="info-tags">
+              <span class="info-tag">일반수리: ${getStatusTag(factory.repairGeneral)}</span>
+              <span class="info-tag">사고수리: ${getStatusTag(factory.repairAccident)}</span></div></div>
+          <div class="info-section"><strong>📦 입고 정보</strong><div class="info-tags">
+              <span class="info-tag">🔧 월수리: ${factory.monthlyCapacity}</span>
+              <span class="info-tag">📥 현재입고: ${factory.currentIncoming}</span>
+              <span class="info-tag">🚚 입고가능: ${factory.possibleIncoming}</span></div></div>
+          <div class="info-section"><strong>🏭 제조사 포인트</strong><div class="info-tags">
+              <span class="info-tag">현대: ${getStatusTag(factory.pointHyundai)}</span>
+              <span class="info-tag">기아: ${getStatusTag(factory.pointKia)}</span></div></div>
+          ${factory.notes && factory.notes !== '0' ? `<div class="info-section"><strong>📝 참고사항</strong><div style="margin-top: 5px;">${factory.notes}</div></div>` : ''}
+        </div>`;
+    }
 
     function loadFactoryJson() {
-      const role = localStorage.getItem('userRole');
-      const jsonFile = role === 'hcs' ? 'factory_hcs.json' : 'factory.json';
-
+      const jsonFile = loginUser === "HCS" ? "factory_hcs.json" : "factory.json";
       fetch(jsonFile)
         .then(res => res.json())
         .then(data => {
@@ -282,6 +266,12 @@ function showFactoryInfo(factory) {
         updateMarkerStyles(latlng);
       });
     }
+
+    window.onload = initMap;
+  </script>
+</body>
+</html>
+
 
     window.onload = initMap;
   </script>
