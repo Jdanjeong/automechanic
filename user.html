@@ -156,7 +156,10 @@ function showFactoryInfo(factory) {
 }
 
     function loadFactoryJson() {
-      fetch('https://jdanjeong.github.io/automechanic/factory.json')
+      const role = localStorage.getItem('userRole');
+      const jsonFile = role === 'hcs' ? 'factory_hcs.json' : 'factory.json';
+
+      fetch(jsonFile)
         .then(res => res.json())
         .then(data => {
           factories = data;
@@ -166,7 +169,8 @@ function showFactoryInfo(factory) {
             marker.addListener('click', () => showFactoryInfo(factory));
             markers.push({ marker, factory });
           });
-        }).catch(err => alert("공업사 데이터를 불러올 수 없습니다."));
+        })
+        .catch(err => alert("공업사 데이터를 불러올 수 없습니다."));
     }
 
     function updateAddressLabel(latlng) {
