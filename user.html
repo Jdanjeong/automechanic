@@ -203,16 +203,19 @@ ${false ? `
     const currentPriority = f.priority || '999';
 
     if (prevPriority !== null && currentPriority !== prevPriority) {
-      const gapRow = document.createElement('tr');
-      gapRow.innerHTML = `
-        <td colspan="7" style="
-          background-color: #ffe5e5;
-          font-weight: bold;
-          text-align: center;
-        ">↑↑ 우선입고 ↑↑</td>
-      `;
-      tbody.appendChild(gapRow);
-    }
+  const gapRow = document.createElement('tr');
+  gapRow.innerHTML = `
+    <td colspan="7" style="
+      background-color: #dc2626;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    ">↑↑ 우선입고 ↑↑</td>
+  `;
+  tbody.appendChild(gapRow);
+}
 
     const tr = document.createElement('tr');
     tr.innerHTML = `
