@@ -136,10 +136,13 @@
           <div class="info-section"><strong>🛠️ 수리 가능여부</strong><div class="info-tags">
               <span class="info-tag">일반수리: ${getStatusTag(factory.repairGeneral)}</span>
               <span class="info-tag">사고수리: ${getStatusTag(factory.repairAccident)}</span></div></div>
+              // 입고정보 영역 주석 처리
+              /*
           <div class="info-section"><strong>📦 입고 정보</strong><div class="info-tags">
               <span class="info-tag">🔧 월수리: ${factory.monthlyCapacity}</span>
               <span class="info-tag">📥 현재입고: ${factory.currentIncoming}</span>
               <span class="info-tag">🚚 입고가능: ${factory.possibleIncoming}</span></div></div>
+              */
           <div class="info-section"><strong>🏭 제조사 포인트</strong><div class="info-tags">
               <span class="info-tag">현대: ${getStatusTag(factory.pointHyundai)}</span>
               <span class="info-tag">기아: ${getStatusTag(factory.pointKia)}</span></div></div>
@@ -173,38 +176,55 @@
     }
 
     function updateMarkerStyles(center) {
-      const tbody = document.getElementById('factory-list');
-      tbody.innerHTML = '';
-      const lat = center.lat(), lng = center.lng();
+  const tbody = document.getElementById('factory-list');
+  tbody.innerHTML = '';
+  const lat = center.lat(), lng = center.lng();
 
-      currentNearby = markers.map(({ marker, factory }) => {
-        const dist = haversine(lat, lng, factory.lat, factory.lng) / 1000;
-        const inRange = dist <= radius;
+  currentNearby = markers.map(({ marker, factory }) => {
+    const dist = haversine(lat, lng, factory.lat, factory.lng) / 1000;
+    const inRange = dist <= radius;
 
-        marker.setIcon(inRange
-          ? { url: 'https://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png' }
-          : { url: 'https://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png' });
+    marker.setIcon(inRange
+      ? { url: 'https://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png' }
+      : { url: 'https://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png' });
 
-        return inRange ? { ...factory, dist } : null;
-      }).filter(Boolean);
+    return inRange ? { ...factory, dist } : null;
+  }).filter(Boolean);
 
-      currentNearby.sort((a, b) => a.dist - b.dist);
+  // ✅ 입고우선순위 → 거리 기준 정렬
+  currentNearby.sort((a, b) => {
+    const pA = parseInt(a.priority || 999);
+    const pB = parseInt(b.priority || 999);
+    if (pA !== pB) return pA - pB;
+    return a.dist - b.dist;
+  });
 
-      for (const f of currentNearby) {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <td>${f.name}</td>
-          <td>${f.priority || '-'}</td>
-          <td>${f.dist.toFixed(2)}</td>
-          <td>${getStatusTag(f.repairGeneral)}</td>
-          <td>${getStatusTag(f.repairAccident)}</td>
-          <td>${getStatusTag(f.pointHyundai)}</td>
-          <td>${getStatusTag(f.pointKia)}</td>
-        `;
-        tr.addEventListener('click', () => showFactoryInfo(f));
-        tbody.appendChild(tr);
-      }
+  // ✅ 테이블 그리기 + 1/2순위 경계선
+  let prevPriority = null;
+  for (const f of currentNearby) {
+    const tr = document.createElement('tr');
+
+    if (prevPriority !== null && f.priority !== prevPriority) {
+      const divider = document.createElement('tr');
+      divider.innerHTML = `<td colspan="7" style="border-top: 2px dashed #999;"></td>`;
+      tbody.appendChild(divider);
     }
+
+    tr.innerHTML = `
+      <td>${f.name}</td>
+      <td>${f.priority || '-'}</td>
+      <td>${f.dist.toFixed(2)}</td>
+      <td>${getStatusTag(f.repairGeneral)}</td>
+      <td>${getStatusTag(f.repairAccident)}</td>
+      <td>${getStatusTag(f.pointHyundai)}</td>
+      <td>${getStatusTag(f.pointKia)}</td>
+    `;
+    tr.addEventListener('click', () => showFactoryInfo(f));
+    tbody.appendChild(tr);
+    prevPriority = f.priority;
+  }
+}
+
 
     function drawCircle(center) {
       if (circle) circle.setMap(null);
