@@ -66,16 +66,9 @@
       align-items: center;
       gap: 8px;
     }
-
-    .logo-row .divider {
-      font-size: 20px;
-      font-weight: bold;
-      color: #333;
-    }
   </style>
 </head>
 <body>
-
   <div class="login-box">
     <div class="logo-row">
       <img src="https://i.namu.wiki/i/RsDHmNoXGs6p8VaBo1cgdK_QcJzxYn_X_0nQY6cPsYl2oDma8yNgrYMR20FcuzT6mBBktZj8UYx9EvmFErW-FDPaHk9x6ivg1duyn3wsXRS-cUEKBUP75gfcUeFT4objzjYkgpwN6Dus0o-ucjpZ2w.svg" alt="HCS Logo">
@@ -88,8 +81,9 @@
     <form onsubmit="return login(event)">
       <select id="username" required>
         <option value="" disabled selected>사용자 유형 선택</option>
-        <option value="HCS">사용자</option>
-        <option value="openlink">관리자</option>
+        <option value="HCS">사용자 (HCS)</option>
+        <option value="openlink">사용자 (Openlink)</option>
+        <option value="admin">관리자</option>
       </select>
       <input type="password" id="password" placeholder="비밀번호" required>
       <button type="submit">로그인</button>
@@ -102,9 +96,12 @@
       const id = document.getElementById('username').value;
       const pw = document.getElementById('password').value;
 
-      if (id === 'openlink' && pw === 'openlink0947') {
-        sessionStorage.setItem("loginUser", "openlink");
+      if (id === 'admin' && pw === '62400947') {
+        sessionStorage.setItem("loginUser", "admin");
         window.location.href = 'admin.html';
+      } else if (id === 'openlink' && pw === '0947') {
+        sessionStorage.setItem("loginUser", "openlink");
+        window.location.href = 'user.html';
       } else if (id === 'HCS' && pw === '1234') {
         sessionStorage.setItem("loginUser", "HCS");
         window.location.href = 'user.html';
@@ -115,6 +112,7 @@
   </script>
 </body>
 </html>
+
 
 
 </body>
