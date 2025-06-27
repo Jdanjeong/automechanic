@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>오픈링크 협력사 현황</title>
+  <title>오픈링크 네트워크 현황</title>
   <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=y42tkwc67w&submodules=geocoder"></script>
   <style>
     body { font-family: 'Arial', sans-serif; margin: 20px; }
@@ -16,6 +16,9 @@
     .radius-buttons button {
       margin-right: 10px; padding: 5px 10px; border-radius: 5px;
       background-color: #e0e7ff; border: none; cursor: pointer;
+    }
+    .radius-buttons button.active {
+      background-color: #6366f1; color: white; font-weight: bold;
     }
     .radius-buttons button:hover { background-color: #c7d2fe; }
     input[type="text"] {
@@ -65,13 +68,13 @@
 
     window.addEventListener("DOMContentLoaded", () => {
       if (loginUser === "HCS") {
-        document.getElementById("page-title").innerText = "🏢 오픈링크 협력사 현황_HCS";
+        document.getElementById("page-title").innerText = "🏢 오픈링크 네트워크 현황_HCS";
       }
     });
   </script>
 
   <img src="https://taksong-driver.openmile.kr/openlink.png" style="width: 139px; height: 22px;" />
-  <h2 id="page-title">🏢 오픈링크 협력사 현황</h2>
+  <h2 id="page-title">🏢 오픈링크 네트워크 현황</h2>
 
   <div style="display:flex; justify-content: space-between; align-items:center;">
     <div>
@@ -83,11 +86,9 @@
 
   <div class="radius-buttons">
     <label>📏 반경:</label>
-    <button onclick="setRadius(5)">5km</button>
-    <button onclick="setRadius(10)">10km</button>
-    <button onclick="setRadius(20)">20km</button>
-    <button onclick="setRadius(30)">30km</button>
-    <button onclick="setRadius(40)">40km</button>
+    <button onclick="setRadius(20, this)">20km</button>
+    <button class="active" onclick="setRadius(30, this)">30km</button>
+    <button onclick="setRadius(40, this)">40km</button>
   </div>
 
   <div id="map"></div>
@@ -248,13 +249,19 @@ ${false ? `
       });
     }
 
-    function setRadius(r) {
-      radius = r;
-      if (selectedMarker) {
-        drawCircle(selectedMarker.getPosition());
-        updateMarkerStyles(selectedMarker.getPosition());
-      }
+    <script>
+  let radius = 30; // 디폴트 반경값을 30으로 설정
+  function setRadius(r, btn) {
+    radius = r;
+    document.querySelectorAll('.radius-buttons button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    if (selectedMarker) {
+      drawCircle(selectedMarker.getPosition());
+      updateMarkerStyles(selectedMarker.getPosition());
     }
+  }
+</script>
+
 
     function searchAddress() {
       const query = document.getElementById('addressInput').value;
