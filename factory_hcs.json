@@ -4,7 +4,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0312928787",
+    "phone": "010-9191-4972 (종경민)",
     "address": "경기 수원시 권선구 오목천로 56 ",
     "lat": "37.2396191",
     "lng": "126.9687613",
@@ -19,11 +19,11 @@
     "registerDate": 20250701
   },
   {
-    "name": "주식회사 카민랩(포터앤봉고)",
+    "name": "주식회사 카민랩",
     "grade": "2급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "01027338484",
+    "phone": "010-2733-8484 (이천호)",
     "address": "경기 여주시 농산로 101 ()",
     "lat": "37.2509149",
     "lng": "127.6366669",
@@ -34,7 +34,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -42,7 +42,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0313598812",
+    "phone": "010-8183-7100 (윤영식)",
     "address": "경기 화성시 양감면 은행나무로 432-3 ()",
     "lat": "37.0959556",
     "lng": "126.9402187",
@@ -61,7 +61,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0319769553",
+    "phone": "010-4026-9550 (신혁진)",
     "address": "경기도 고양시 일산동구 성현로 151 (성석동)",
     "lat": "37.7091164",
     "lng": "126.8026945",
@@ -72,7 +72,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -80,7 +80,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "028999191",
+    "phone": "010-3784-4100 (유세종)",
     "address": "경기도 광명시 구름산로 43 (하안동)",
     "lat": "37.4576958",
     "lng": "126.8778855",
@@ -91,7 +91,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -99,7 +99,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0317267474",
+    "phone": "010-7166-1312 (정기식)",
     "address": "경기도 광주시 능평로 102 (오포읍)",
     "lat": "37.3498961",
     "lng": "127.1688409",
@@ -110,7 +110,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -118,7 +118,7 @@
     "grade": "2급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "031-559-1215",
+    "phone": "010-2984-4844 (위용훈)",
     "address": "경기도 남양주시 재재기로 40 (화도읍)",
     "lat": "37.6304532",
     "lng": "127.3019527",
@@ -137,7 +137,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0326138866",
+    "phone": "010-6587-7713 (김용열)",
     "address": "경기도 부천시 경인로138번길 9 (송내동)",
     "lat": "37.4837503",
     "lng": "126.7713587",
@@ -148,7 +148,26 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
+    "registerDate": 20250701
+  },
+  {
+    "name": "에이더블유피",
+    "grade": "2급",
+    "priority": 1,
+    "HCS": "Y",
+    "phone": "010-5219-8874 (이은철)",
+    "address": "경기 성남시 분당구 새마을로51번길 14",
+    "lat": 37.3839716,
+    "lng": 127.137693,
+    "monthlyCapacity": "ㅇㅇ대",
+    "currentIncoming": "ㅇㅇ대",
+    "possibleIncoming": "ㅇㅇ대",
+    "repairGeneral": "ⅹ",
+    "repairAccident": "○",
+    "pointHyundai": "-",
+    "pointKia": "-",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -156,7 +175,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "010-5259-4441",
+    "phone": "010-5259-4441 (김기우)",
     "address": "경기도 수원시 영통구 매영로 219-8 (원천동, (주)하프앤드)",
     "lat": "37.2615201",
     "lng": "127.0643758",
@@ -175,7 +194,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0314986464",
+    "phone": "010-2110-5743 (정봉규)",
     "address": "경기도 시흥시 공단1대로260번길 6 (정왕동)",
     "lat": "37.3347225",
     "lng": "126.7287681",
@@ -194,7 +213,7 @@
     "grade": "2급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0314055454",
+    "phone": "010-5338-7144 (박만기)",
     "address": "경기도 안산시 상록구 안산천서로6길 6 (월피동, 형제자동차정비)",
     "lat": "37.3380852",
     "lng": "126.8499001",
@@ -205,7 +224,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -213,7 +232,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0316748611",
+    "phone": "010-7990-4516 (김수진)",
     "address": "경기도 안성시 종합운동장로 43 (금광면)",
     "lat": "37.0029789",
     "lng": "127.3242151",
@@ -224,7 +243,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -232,7 +251,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0314560037",
+    "phone": "010-9472-4920 (이수정)",
     "address": "경기도 안양시 동안구 흥안대로439번길 67-1 (관양동)",
     "lat": "37.3927703",
     "lng": "126.9707131",
@@ -243,7 +262,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -251,7 +270,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0318799595",
+    "phone": "010-5500-8558 (김승복)",
     "address": "경기도 양주시 양주산성로 838-14 (백석읍)",
     "lat": "37.7932470",
     "lng": "126.9695112",
@@ -262,7 +281,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -270,7 +289,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0313784973",
+    "phone": "010-3559-1027 (안광원)",
     "address": "경기도 오산시 청학로 108 (궐동, 티에이치모터스)",
     "lat": "37.1584787",
     "lng": "127.0647336",
@@ -281,7 +300,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -289,7 +308,7 @@
     "grade": "2급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0313214949",
+    "phone": "010-8880-8696 (정구하)",
     "address": "경기도 용인시 처인구 중부대로 1585-1 (마평동, 태강자동차공업사)",
     "lat": "37.2335701",
     "lng": "127.2207175",
@@ -308,7 +327,7 @@
     "grade": "2급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0314597200",
+    "phone": "010-4063-0474 (박현준)",
     "address": "경기도 의왕시 고산로 28 (고천동, 한진화학(주))",
     "lat": "37.3523856",
     "lng": "126.9680223",
@@ -319,7 +338,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -327,7 +346,7 @@
     "grade": "2급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0318511119",
+    "phone": "010-6276-6106 (김희문)",
     "address": "경기도 의정부시 용현로105번길 45-7 (민락동, 북부현대공업사)",
     "lat": "37.7431752",
     "lng": "127.0865684",
@@ -338,7 +357,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -346,7 +365,7 @@
     "grade": "2급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0318710003",
+    "phone": "010-5878-2218 (김의석)",
     "address": "경기도 의정부시 입석로55번길 21 (가능동)",
     "lat": "37.7539411",
     "lng": "127.0192197",
@@ -357,7 +376,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -365,7 +384,7 @@
     "grade": "2급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0316319506",
+    "phone": "010-4724-5627 (김은호)",
     "address": "경기도 이천시 경충대로 1593 (대월면)",
     "lat": "37.2222546",
     "lng": "127.5243437",
@@ -384,7 +403,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0319460196",
+    "phone": "010-9449-9696 (김재경)",
     "address": "경기도 파주시 아리랑로 8 (금촌동)",
     "lat": "37.7620471",
     "lng": "126.7677884",
@@ -395,7 +414,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -403,7 +422,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0316676077",
+    "phone": "010-3743-5449 (이기엽)",
     "address": "경기도 평택시 노루댕이1길 14 (장당동)",
     "lat": "37.0445414",
     "lng": "127.0637983",
@@ -422,7 +441,7 @@
     "grade": "2급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0226685607",
+    "phone": "010-8731-4974 (이유주)",
     "address": "서울 강서구 남부순환로19길 48-37 (금만물산)",
     "lat": 37.5465596,
     "lng": 126.82533,
@@ -441,7 +460,7 @@
     "grade": "2급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "028521116",
+    "phone": "010-2041-5268 (김윤혜)",
     "address": "서울특별시 금천구 가산로 50-7 (독산동)",
     "lat": "37.4719731",
     "lng": "126.8971256",
@@ -452,7 +471,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -460,7 +479,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "029542834",
+    "phone": "010-2651-9813 (윤철)",
     "address": "서울특별시 도봉구 방학로 45 (방학동, 방학동정비공장)",
     "lat": "37.6624088",
     "lng": "127.0471185",
@@ -471,7 +490,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -479,18 +498,18 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "028521116",
+    "phone": "010-2041-5268 (김윤혜)",
     "address": "서울특별시 서초구 명달로 36",
     "lat": 37.4807646,
     "lng": 127.0056,
-    "monthlyCapacity": "-",
-    "currentIncoming": "-",
-    "possibleIncoming": "-",
+    "monthlyCapacity": "ㅇㅇ대",
+    "currentIncoming": "ㅇㅇ대",
+    "possibleIncoming": "ㅇㅇ대",
     "repairGeneral": "ⅹ",
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -498,7 +517,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "024699993",
+    "phone": "010-9073-4280 (이상열)",
     "address": "서울특별시 성동구 연무장길 87 (성수동2가)",
     "lat": "37.5416245",
     "lng": "127.0589631",
@@ -509,7 +528,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -517,7 +536,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0226764112",
+    "phone": "010-5411-3174 (강병하)",
     "address": "서울특별시 영등포구 양평로19길 31 (양평동4가)",
     "lat": "37.5346956",
     "lng": "126.8936772",
@@ -536,7 +555,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "024388600",
+    "phone": "010-3738-0265 (최동래)",
     "address": "서울특별시 중랑구 망우로 189 (중화동, 중랑자동차공업(주))",
     "lat": "37.5938447",
     "lng": "127.0737281",
@@ -555,7 +574,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "01037588205",
+    "phone": "010-8758-7970 (이희정)",
     "address": "인천 서구 봉수대로 251 ()",
     "lat": "37.4980062",
     "lng": "126.6609014",
@@ -574,7 +593,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0328653934",
+    "phone": "010-6846-0899 (김열)",
     "address": "인천광역시 미추홀구 염전로 381 (주안동)",
     "lat": "37.4703718",
     "lng": "126.6823328",
@@ -585,7 +604,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -593,7 +612,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0328636080",
+    "phone": "010-4303-3282 (이용우)",
     "address": "인천 중구 서해대로180번길 65",
     "lat": 37.4418305,
     "lng": 126.628761,
@@ -612,7 +631,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0336370550",
+    "phone": "010-3350-5896 (류성문)",
     "address": "강원도 속초시 싸리재길 247-26",
     "lat": 38.1835353,
     "lng": 128.558823,
@@ -631,7 +650,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0337473300",
+    "phone": "010-9465-4800 (이철)",
     "address": "강원도 원주시 북원로 2807 (태장동)",
     "lat": "37.3941796",
     "lng": "127.9501474",
@@ -650,7 +669,7 @@
     "grade": "2급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0332570554",
+    "phone": "010-5312-0554 (김미옥)",
     "address": "강원도 춘천시 춘천로56번길 19-1 (효자동)",
     "lat": "37.8686260",
     "lng": "127.7260522",
@@ -661,7 +680,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -669,7 +688,7 @@
     "grade": "2급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0335543315",
+    "phone": "010-8799-5050 (변태영)",
     "address": "강원도 태백시 동태백로 1147 (통동)",
     "lat": "37.1654389",
     "lng": "129.0312874",
@@ -680,7 +699,26 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
+    "registerDate": 20250701
+  },
+  {
+    "name": "동강릉현대서비스",
+    "grade": "2급",
+    "priority": 1,
+    "HCS": "Y",
+    "phone": "010-5280-7451 (이경민)",
+    "address": "강원도 강릉시 월대산로 151 (두산동)",
+    "lat": "37.7599218",
+    "lng": "128.9270424",
+    "monthlyCapacity": "ㅇㅇ대",
+    "currentIncoming": "ㅇㅇ대",
+    "possibleIncoming": "ㅇㅇ대",
+    "repairGeneral": "ⅹ",
+    "repairAccident": "○",
+    "pointHyundai": "-",
+    "pointKia": "-",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -688,7 +726,7 @@
     "grade": "2급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0542618900",
+    "phone": "010-4532-3883 (황성운)",
     "address": "경북 포항시 북구 아치로 159 ()",
     "lat": "36.0576124",
     "lng": "129.3483710",
@@ -699,7 +737,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -707,7 +745,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0556373710",
+    "phone": "010-3495-5055 (김상일)",
     "address": "경상남도 거제시 송정5길 112-7 (연초면)",
     "lat": "34.9063277",
     "lng": "128.6800581",
@@ -718,7 +756,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -726,7 +764,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0556877133",
+    "phone": "010-2805-8007 (김정주)",
     "address": "경상남도 거제시 연하해안로 206 (연초면)",
     "lat": "34.8988261",
     "lng": "128.6306785",
@@ -737,7 +775,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -745,7 +783,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0553137000",
+    "phone": "010-3721-4508 (윤창식)",
     "address": "경상남도 김해시 장유로115번길 1 (부곡동)",
     "lat": "35.2115533",
     "lng": "128.8009044",
@@ -756,7 +794,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -764,7 +802,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0558522100",
+    "phone": "010-4175-1185 (장기규)",
     "address": "경상남도 사천시 항공로 54 (사천읍, 동성1급정비)",
     "lat": "35.0809659",
     "lng": "128.0770864",
@@ -775,7 +813,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -783,7 +821,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0557811001",
+    "phone": "010-2271-8501 (김영수)",
     "address": "경상남도 양산시 북정공단1길 63 (북정동, 미성강업)",
     "lat": "35.3664459",
     "lng": "129.0442830",
@@ -794,7 +832,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -802,7 +840,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0557558828",
+    "phone": "010-8420-0112 (정찬현)",
     "address": "경상남도 진주시 대신로115번길 12 (상평동)",
     "lat": "35.1708500",
     "lng": "128.1169229",
@@ -813,7 +851,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -821,7 +859,7 @@
     "grade": "2급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0552650821",
+    "phone": "010-5244-3138 (이정희)",
     "address": "경상남도 창원시 의창구 차상로8번길 64 (팔용동)",
     "lat": "35.2297145",
     "lng": "128.6400878",
@@ -832,7 +870,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -840,7 +878,7 @@
     "grade": "2급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0556488872",
+    "phone": "010-6480-8872 (이순이)",
     "address": "경상남도 통영시 춘원2로 49-45 (광도면)",
     "lat": "34.9560945",
     "lng": "128.4120853",
@@ -851,7 +889,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -859,7 +897,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0547487000",
+    "phone": "010-7460-1128 (권상렬)",
     "address": "경상북도 경주시 외외1길 166 (충효동)",
     "lat": "35.8337787",
     "lng": "129.1628909",
@@ -878,7 +916,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0544623000",
+    "phone": "010-3862-4900 (이준걸)",
     "address": "경상북도 구미시 화신로8길 4-23 (광평동)",
     "lat": "36.1132051",
     "lng": "128.3581490",
@@ -889,7 +927,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -897,7 +935,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0544378282",
+    "phone": "010-5368-0661 (이명재)",
     "address": "경상북도 김천시 백옥1길 5 (백옥동)",
     "lat": "36.1246342",
     "lng": "128.0821653",
@@ -908,7 +946,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -916,7 +954,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0548213800",
+    "phone": "010-3538-2457 (윤탄출)",
     "address": "경상북도 안동시 경동로 958 (용상동)",
     "lat": "36.5542421",
     "lng": "128.7582376",
@@ -927,7 +965,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -935,7 +973,7 @@
     "grade": "2급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0546339700",
+    "phone": "010-9005-1386 (권영수)",
     "address": "경상북도 영주시 의상로 136 (상망동)",
     "lat": "36.8483368",
     "lng": "128.6393793",
@@ -946,7 +984,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -954,7 +992,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0629511078",
+    "phone": "010-3622-1077 (이정학)",
     "address": "광주 광산구 북문대로 629-15 ()",
     "lat": "35.2074007",
     "lng": "126.8320266",
@@ -965,7 +1003,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -973,7 +1011,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0622344930",
+    "phone": "010-2109-4969 (양정식)",
     "address": "광주 동구 소태길 76 ((유)한결자동차서비스)",
     "lat": "35.1206388",
     "lng": "126.9406839",
@@ -984,7 +1022,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -992,7 +1030,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0629439300",
+    "phone": "010-7116-9301 (임낙규)",
     "address": "광주광역시 광산구 소촌로152번길 53-20 (소촌동)",
     "lat": "35.1577184",
     "lng": "126.7983492",
@@ -1003,7 +1041,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1011,7 +1049,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0535848585",
+    "phone": "010-6789-5916 (신금분)",
     "address": "대구광역시 달서구 성서공단로61길 12 (장동)",
     "lat": "35.8370121",
     "lng": "128.5171622",
@@ -1022,7 +1060,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1030,7 +1068,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0539641177",
+    "phone": "010-3131-4047 (변선희)",
     "address": "대구광역시 동구 안심로55길 25 (동호동)",
     "lat": "35.8683320",
     "lng": "128.7156170",
@@ -1041,7 +1079,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1049,7 +1087,7 @@
     "grade": "2급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0535526789",
+    "phone": "010-8564-6353 (엄원일)",
     "address": "대구광역시 서구 국채보상로14길 29-15 (중리동)",
     "lat": "35.8661931",
     "lng": "128.5403669",
@@ -1060,7 +1098,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1068,7 +1106,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0426337778",
+    "phone": "010-8402-9678 (유홍랑)",
     "address": "대전광역시 대덕구 대화로119번길 17 (대화동)",
     "lat": "36.3653926",
     "lng": "127.4068479",
@@ -1079,7 +1117,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1087,7 +1125,7 @@
     "grade": "2급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0517834005",
+    "phone": "010-6217-4006 (한준호)",
     "address": "부산광역시 금정구 공단서로18번길 76 (금사동)",
     "lat": "35.2169317",
     "lng": "129.1144883",
@@ -1098,7 +1136,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1106,7 +1144,7 @@
     "grade": "1급",
     "priority": 2,
     "HCS": "Y",
-    "phone": "0513015201",
+    "phone": "010-5046-2285 (전경배)",
     "address": "부산광역시 사상구 낙동대로1048번길 52 (감전동)",
     "lat": "35.1530197",
     "lng": "128.9757578",
@@ -1117,7 +1155,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1125,7 +1163,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0518632707",
+    "phone": "010-9346-9946 (유동훈)",
     "address": "부산광역시 연제구 거제대로 182 (거제동)",
     "lat": "35.1845720",
     "lng": "129.0712872",
@@ -1136,7 +1174,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1144,7 +1182,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0522673730",
+    "phone": "010-8962-2027 (이영희)",
     "address": "울산광역시 남구 처용로 40 (여천동)",
     "lat": "35.5143321",
     "lng": "129.3417282",
@@ -1155,7 +1193,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "(쿠팡전용)(상용겸용)",
+    "notes": "(상용겸용)",
     "registerDate": 20250701
   },
   {
@@ -1163,7 +1201,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0617939552",
+    "phone": "010-6602-4599 (이수정)",
     "address": "전남 광양시 느지매기길 105 ()",
     "lat": "34.9557504",
     "lng": "127.6767489",
@@ -1174,7 +1212,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1182,7 +1220,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0613324300",
+    "phone": "010-5172-3150 (장재영)",
     "address": "전라남도 나주시 교원교촌길 22-3 (남평읍, 1급자동차정비소)",
     "lat": "35.0350465",
     "lng": "126.8382934",
@@ -1193,7 +1231,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1201,7 +1239,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0612790114",
+    "phone": "010-7268-7232 (신유미)",
     "address": "전라남도 목포시 고하대로 863 (연산동)",
     "lat": "34.8206962",
     "lng": "126.3840565",
@@ -1220,7 +1258,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0617262646",
+    "phone": "010-6623-2646 (정현주)",
     "address": "전라남도 순천시 율촌산단4로 77-53 (해룡면)",
     "lat": "34.9022369",
     "lng": "127.5868963",
@@ -1231,7 +1269,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1239,7 +1277,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0616828113",
+    "phone": "010-7682-8113 (장현이)",
     "address": "전라남도 여수시 봉계4길 7 (봉계동)",
     "lat": "34.7846033",
     "lng": "127.6640070",
@@ -1250,7 +1288,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1258,7 +1296,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0635810101",
+    "phone": "010-9436-2644 (김학열)",
     "address": "전라북도 부안군 행안중앙로 8 (행안면, 제일자동차공업사)",
     "lat": "35.7125043",
     "lng": "126.7124467",
@@ -1269,7 +1307,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1277,7 +1315,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0634424977",
+    "phone": "010-4658-5993 (이홍성)",
     "address": "전라북도 군산시 십자다리길 65",
     "lat": 35.9704743,
     "lng": 126.660488,
@@ -1296,7 +1334,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0632112242",
+    "phone": "010-3021-8778 (양종현)",
     "address": "전라북도 전주시 덕진구 추천로 47-24 (팔복동3가)",
     "lat": "35.8437150",
     "lng": "127.0996999",
@@ -1307,7 +1345,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1315,7 +1353,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0647940500",
+    "phone": "010-5336-3530 (안지원)",
     "address": "제주특별자치도 서귀포시 상모대서로 68 (대정읍)",
     "lat": "33.2280845",
     "lng": "126.2603511",
@@ -1326,7 +1364,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1334,7 +1372,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0647820404",
+    "phone": "010-2689-7238 (신경식)",
     "address": "제주특별자치도 서귀포시 서성일로 904 (성산읍)",
     "lat": "33.4389165",
     "lng": "126.8762994",
@@ -1345,7 +1383,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1353,7 +1391,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0647569400",
+    "phone": "010-4597-3264 (김창내)",
     "address": "제주특별자치도 제주시 선반남2길 63 (화북일동)",
     "lat": "33.5128761",
     "lng": "126.5663550",
@@ -1364,7 +1402,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1372,7 +1410,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0418584293",
+    "phone": "010-6829-3322 (조은주)",
     "address": "충청남도 공주시 장척로 30 (송선동)",
     "lat": "36.4838713",
     "lng": "127.1694964",
@@ -1383,7 +1421,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1391,7 +1429,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0413630298",
+    "phone": "010-2352-8684 (권대한)",
     "address": "충청남도 당진시 남부로 61 (채운동, 현대오토)",
     "lat": "36.8845897",
     "lng": "126.6229675",
@@ -1402,7 +1440,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1410,7 +1448,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0415489430",
+    "phone": "010-8968-4744 (박봉춘)",
     "address": "충청남도 아산시 모산로 30 (배방읍)",
     "lat": "36.7720988",
     "lng": "127.0462128",
@@ -1421,7 +1459,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1429,7 +1467,7 @@
     "grade": "2급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0415644950",
+    "phone": "010-8909-7088 (서길원)",
     "address": "충청남도 천안시 서북구 소댕이3길 9 (성거읍)",
     "lat": "36.8712300",
     "lng": "127.1967713",
@@ -1440,7 +1478,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1448,7 +1486,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0438830909",
+    "phone": "010-2819-8912 (장영희)",
     "address": "충청북도 음성군 대금로 672 (대소면)",
     "lat": "36.9713384",
     "lng": "127.5114206",
@@ -1459,7 +1497,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1467,7 +1505,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0432351901",
+    "phone": "010-5631-6105 (이윤종)",
     "address": "충청북도 청주시 서원구 양촌4길 5 (남이면)",
     "lat": "36.5934916",
     "lng": "127.4751865",
@@ -1486,7 +1524,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0432412410",
+    "phone": "010-9287-2270 (박준구)",
     "address": "충청북도 청주시 청원구 각리가곡로 459 (오창읍)",
     "lat": "36.7057409",
     "lng": "127.4496907",
@@ -1497,7 +1535,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   },
   {
@@ -1505,7 +1543,7 @@
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
-    "phone": "0438566044",
+    "phone": "010-5465-6044 (방현욱)",
     "address": "충청북도 충주시 중원대로 3752-1 (용두동)",
     "lat": "36.9620507",
     "lng": "127.8902081",
@@ -1516,7 +1554,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "",
+    "notes": "-",
     "registerDate": 20250701
   }
 ]
