@@ -151,7 +151,7 @@ ${false ? `
               <span class="info-tag">현대: ${getStatusTag(factory.pointHyundai)}</span>
               <span class="info-tag">기아: ${getStatusTag(factory.pointKia)}</span></div></div>
           <div class="info-section"><strong>🗓️ 등록일자:</strong> ${factory.registerDate || '-'}</div>   
-          ${factory.notes && factory.notes !== '0' ? `<div class="info-section"><strong>📝 참고사항</strong><div style="margin-top: 5px;">${factory.notes}</div></div>` : ''}
+          ${factory.notes && factory.notes !== '0' ? `<div class="info-section"><strong>📝 참고사항</strong><div style="margin-top: 7px; color: red; font-weight: bold;">${factory.notes}</div></div>` : ''}
         </div>`;
     }
 
