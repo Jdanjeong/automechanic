@@ -1178,7 +1178,7 @@
     "registerDate": 20250701
   },
   {
-    "name": "씨엘티앤알(씨엘정비공장)",
+    "name": "씨엘티앤알(씨엘정비공장),입고중지",
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
@@ -1190,7 +1190,7 @@
     "currentIncoming": "ㅇㅇ대",
     "possibleIncoming": "ㅇㅇ대",
     "repairGeneral": "ⅹ",
-    "repairAccident": "중지",
+    "repairAccident": "ⅹ",
     "pointHyundai": "-",
     "pointKia": "-",
     "notes": "(상용겸용)",
