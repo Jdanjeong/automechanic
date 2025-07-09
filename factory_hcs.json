@@ -170,6 +170,25 @@
     "notes": "-",
     "registerDate": 20250701
   },
+    {
+    "name": "케이제이광진모터스",
+    "grade": "1급",
+    "priority": 1,
+    "HCS": "Y",
+    "phone": "024616796",
+    "address": "서울 성동구 광나루로 320-20 (광진모터스)",
+    "lat": "37.5475160",
+    "lng": "127.0651365",
+    "monthlyCapacity": "ㅇㅇ대",
+    "currentIncoming": "ㅇㅇ대",
+    "possibleIncoming": "ㅇㅇ대",
+    "repairGeneral": "ⅹ",
+    "repairAccident": "○",
+    "pointHyundai": "-",
+    "pointKia": "-",
+    "notes": "-",
+    "registerDate": "20250709"
+  },
   {
     "name": "(주)대영오토모터스",
     "grade": "1급",
