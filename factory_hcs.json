@@ -19,6 +19,25 @@
     "registerDate": 20250701
   },
   {
+    "name": "울산현대상용서비스(현대)",
+    "grade": "1급",
+    "priority": "1",
+    "HCS": "Y",
+    "phone": "0522864747",
+    "address": "울산광역시 북구 산업로 1515 (신천동)",
+    "lat": "35.6446199",
+    "lng": "129.3422367",
+    "monthlyCapacity": "ㅇㅇ대",
+    "currentIncoming": "ㅇㅇ대",
+    "possibleIncoming": "ㅇㅇ대",
+    "repairGeneral": "○",
+    "repairAccident": "○",
+    "pointHyundai": "○",
+    "pointKia": "-",
+    "notes": "(상용겸용)",
+    "registerDate": "-"
+  },
+  {
     "name": "주식회사 카민랩",
     "grade": "2급",
     "priority": 2,
