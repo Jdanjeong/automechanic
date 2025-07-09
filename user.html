@@ -127,10 +127,11 @@
     let radius = 10, markers = [], currentNearby = [];
 
     function getStatusTag(flag) {
-      if (flag === '○') return '<span style="color:#2563eb;font-weight:bold">가능</span>';
-      if (flag === 'Ⅹ' || flag === 'X') return '<span style="color:#dc2626;font-weight:bold">불가능</span>';
-      return '<span style="color:#6b7280;">-</span>';
-    }
+     if (flag === '입고중지') return '<span style="color:red;font-weight:bold">입고중지</span>';
+     if (flag === '○') return '<span style="color:#2563eb;font-weight:bold">가능</span>';
+     if (flag === 'Ⅹ' || flag === 'X') return '<span style="color:#6b7280;">-</span>';
+     return '<span style="color:#6b7280;">' + flag + '</span>'; // 기타 텍스트 처리
+   }
 
     function showFactoryInfo(factory) {
       document.getElementById('factory-info').innerHTML = `
