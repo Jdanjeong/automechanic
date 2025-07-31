@@ -132,6 +132,25 @@
     "notes": "-",
     "registerDate": 20250701
   },
+      {
+    "name": "넘버원팩토리",
+    "grade": "2급",
+    "priority": 2,
+    "HCS": "Y",
+    "phone": "010-4723-7235(정기영)",
+    "address": "서울특별시 성동구 뚝섬로15길 23-20 (성수동2가)",
+    "lat": "37.5393056",
+    "lng": "127.060967",
+    "monthlyCapacity": "ㅇㅇ대",
+    "currentIncoming": "ㅇㅇ대",
+    "possibleIncoming": "ㅇㅇ대",
+    "repairGeneral": "ⅹ",
+    "repairAccident": "○",
+    "pointHyundai": "-",
+    "pointKia": "-",
+    "notes": "차순위입고",
+    "registerDate": "20250731"
+  },
   {
     "name": "케이현대자동차공업사 주식회사",
     "grade": "2급",
