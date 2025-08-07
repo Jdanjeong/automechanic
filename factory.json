@@ -126,11 +126,11 @@
     "currentIncoming": "ㅇㅇ대",
     "possibleIncoming": "ㅇㅇ대",
     "repairGeneral": "○",
-    "repairAccident": "○",
+    "repairAccident": "입고중지",
     "pointHyundai": "-",
     "pointKia": "-",
     "notes": "-",
-    "registerDate": "-"
+    "registerDate": "250801"
   },
   {
     "name": "(주)미래자동차",
