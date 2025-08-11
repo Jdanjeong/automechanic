@@ -18,6 +18,25 @@
     "notes": "-",
     "registerDate": 20250701
   },
+   {
+    "name": "주식회사 이즈모터스(영통점)",
+    "grade": "1급",
+    "priority": "",
+    "HCS": "Y",
+    "phone": "010-9191-4972 (종경민)",
+    "address": "경기 수원시 영통구 영통로 295 (이즈모터스)",
+    "lat": "37.2528162",
+    "lng": "127.0608964",
+    "monthlyCapacity": "ㅇㅇ대",
+    "currentIncoming": "ㅇㅇ대",
+    "possibleIncoming": "ㅇㅇ대",
+    "repairGeneral": "○",
+    "repairAccident": "○",
+    "pointHyundai": "-",
+    "pointKia": "-",
+    "notes": "-",
+    "registerDate": "20250801"
+  },
   {
     "name": "울산현대상용서비스(현대)",
     "grade": "1급",
