@@ -171,7 +171,7 @@
     "registerDate": "20250731"
   },
   {
-    "name": "케이현대자동차공업사 주식회사",
+    "name": "케이현대자동차공업사",
     "grade": "2급",
     "priority": 2,
     "HCS": "Y",
@@ -221,10 +221,10 @@
     "currentIncoming": "ㅇㅇ대",
     "possibleIncoming": "ㅇㅇ대",
     "repairGeneral": "ⅹ",
-    "repairAccident": "입고중지",
+    "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "8/8까지 입고중지요청",
+    "notes": "-",
     "registerDate": 20250701
   },
     {
@@ -601,7 +601,7 @@
     "currentIncoming": "ㅇㅇ대",
     "possibleIncoming": "ㅇㅇ대",
     "repairGeneral": "ⅹ",
-    "repairAccident": "입고중지",
+    "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
     "notes": "-",
