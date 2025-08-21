@@ -116,7 +116,7 @@
   {
     "name": "(주)대영오토모터스",
     "grade": "1급",
-    "priority": 1,
+    "priority": 0,
     "HCS": "Y",
     "phone": "010-5259-4441 (김기우)",
     "address": "경기도 수원시 영통구 매영로 219-8 (원천동, (주)하프앤드)",
@@ -125,7 +125,7 @@
     "monthlyCapacity": "ㅇㅇ대",
     "currentIncoming": "ㅇㅇ대",
     "possibleIncoming": "ㅇㅇ대",
-    "repairGeneral": "○",
+    "repairGeneral": "입고중지",
     "repairAccident": "입고중지",
     "pointHyundai": "-",
     "pointKia": "-",
@@ -3099,7 +3099,7 @@
   {
     "name": "주식회사 이즈모터스(영통점)",
     "grade": "1급",
-    "priority": "",
+    "priority": "1",
     "HCS": "N",
     "phone": "0312246655",
     "address": "경기 수원시 영통구 영통로 295 (이즈모터스)",
