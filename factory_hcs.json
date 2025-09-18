@@ -27,7 +27,17 @@
     "address": "경기 수원시 권선구 오목천로 56 ",
     "lat": "37.2396191",
     "lng": "126.9687613",
-    "monthlyCapacity": "ㅇㅇ대",  {
+    "monthlyCapacity": "ㅇㅇ대",  
+    "currentIncoming": "ㅇㅇ대",
+    "possibleIncoming": "ㅇㅇ대",
+    "repairGeneral": "○",
+    "repairAccident": "○",
+    "pointHyundai": "-",
+    "pointKia": "-",
+    "notes": "-",
+    "registerDate": 20250701
+  },
+  {
     "name": "신포자동차정비",
     "grade": "1급",
     "priority": "",
@@ -45,15 +55,6 @@
     "pointKia": "-",
     "notes": "-",
     "registerDate": "-"
-  },
-    "currentIncoming": "ㅇㅇ대",
-    "possibleIncoming": "ㅇㅇ대",
-    "repairGeneral": "○",
-    "repairAccident": "○",
-    "pointHyundai": "-",
-    "pointKia": "-",
-    "notes": "-",
-    "registerDate": 20250701
   },
    {
     "name": "주식회사 이즈모터스(영통점)",
