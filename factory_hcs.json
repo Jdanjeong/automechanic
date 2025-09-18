@@ -37,25 +37,6 @@
     "notes": "-",
     "registerDate": 20250701
   },
-  {
-    "name": "신포자동차정비",
-    "grade": "1급",
-    "priority": "",
-    "HCS": "N",
-    "phone": "01038638799",
-    "address": "경상남도 창원시 마산합포구 수산1길 12 (신포동1가, 신포자동차정비공장)",
-    "lat": "35.1981323",
-    "lng": "128.5731226",
-    "monthlyCapacity": "ㅇㅇ대",
-    "currentIncoming": "ㅇㅇ대",
-    "possibleIncoming": "ㅇㅇ대",
-    "repairGeneral": "○",
-    "repairAccident": "○",
-    "pointHyundai": "-",
-    "pointKia": "-",
-    "notes": "-",
-    "registerDate": "-"
-  },
    {
     "name": "주식회사 이즈모터스(영통점)",
     "grade": "1급",
