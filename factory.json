@@ -15,10 +15,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "적용대상(아래 3개 조건 모두 해당시)
-               - 우리금융캐피탈 사고 차량에 대해서만,
-               - 운행이 불가능하여 견인입고가 필요한 사고 건에 대해서만,
-               - 위 파일럿 지역(용인, 청주) 내 사고차량인 경우",
+    "notes": "우리금융캐피탈,견인대상만 입고",
     "registerDate": 20250917
     },  
     {
@@ -37,7 +34,7 @@
     "repairAccident": "○",
     "pointHyundai": "-",
     "pointKia": "-",
-    "notes": "우리금융캐피탈, 우리카드만 입고",
+    "notes": "우리금융캐피탈, 견인대상만 입고",
     "registerDate": 20250917
   },
   {
