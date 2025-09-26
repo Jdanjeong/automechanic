@@ -1,5 +1,24 @@
 [
     {
+    "name": "지프써비",
+    "grade": "1급",
+    "priority": 1,
+    "HCS": "N",
+    "phone": "010-2641-0153 (박영준)",
+    "address": "광주시 남구 송암로24번가길39 ",
+    "lat": "35.1113015",
+    "lng": "126.877838",
+    "monthlyCapacity": "ㅇㅇ대",
+    "currentIncoming": "ㅇㅇ대",
+    "possibleIncoming": "ㅇㅇ대",
+    "repairGeneral": "ⅹ",
+    "repairAccident": "○",
+    "pointHyundai": "-",
+    "pointKia": "-",
+    "notes": "우리금융캐피탈,견인대상만 입고",
+    "registerDate": 20250926
+    },
+    {
     "name": "베스트포",
     "grade": "1급",
     "priority": 1,
