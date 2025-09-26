@@ -1,5 +1,24 @@
 [
   {
+    "name": "베스트포",
+    "grade": "1급",
+    "priority": 1,
+    "HCS": "Y",
+    "phone": "010-4455-9327 (김도영)",
+    "address": "경기도 용인시 처인구 모현읍 백옥대로 2265 ",
+    "lat": "37.3274595",
+    "lng": "127.244497",
+    "monthlyCapacity": "ㅇㅇ대",
+    "currentIncoming": "ㅇㅇ대",
+    "possibleIncoming": "ㅇㅇ대",
+    "repairGeneral": "○",
+    "repairAccident": "○",
+    "pointHyundai": "-",
+    "pointKia": "-",
+    "notes": "-",
+    "registerDate": 20250925
+  },  
+  {
     "name": "블루핸즈 롯데칠성음료신협양평분점",
     "grade": "1급",
     "priority": 1,
