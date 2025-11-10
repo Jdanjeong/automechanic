@@ -86,9 +86,9 @@
 
   <div class="radius-buttons">
     <label>📏 반경:</label>
+    <button class="active" onclick="setRadius(10, this)">10km</button>
     <button onclick="setRadius(20, this)">20km</button>
-    <button class="active" onclick="setRadius(30, this)">30km</button>
-    <button onclick="setRadius(40, this)">40km</button>
+    <button onclick="setRadius(30, this)">30km</button>
   </div>
 
   <div id="map"></div>
@@ -329,3 +329,4 @@ ${false ? `
 <div style="text-align: center; margin-top: 20px; font-size: 12px; color: #999;">
   ※ 해당 화면은 HCS 전용 계정으로 로그인 시 표시됩니다                        COPYRIGHT(C) OPENLINK CO.,LTD. ALL RIGHTS RESERVED.
 </div>
+
