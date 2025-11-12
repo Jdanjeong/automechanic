@@ -1418,11 +1418,11 @@
     "currentIncoming": "ㅇㅇ대",
     "possibleIncoming": "ㅇㅇ대",
     "repairGeneral": "ⅹ",
-    "repairAccident": "○",
+    "repairAccident": "입고중지",
     "pointHyundai": "-",
     "pointKia": "-",
     "notes": "-",
-    "registerDate": 20250701
+    "registerDate": 20251112
   },
   {
     "name": "씨엘티앤알(씨엘정비공장)",
