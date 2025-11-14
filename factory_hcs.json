@@ -715,11 +715,11 @@
     "currentIncoming": "ㅇㅇ대",
     "possibleIncoming": "ㅇㅇ대",
     "repairGeneral": "ⅹ",
-    "repairAccident": "○",
+    "repairAccident": "입고중지",
     "pointHyundai": "-",
     "pointKia": "-",
     "notes": "-",
-    "registerDate": 20250701
+    "registerDate": 20251114
   },
   {
     "name": "(주)위드모터스(서초)",
