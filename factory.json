@@ -112,8 +112,8 @@
     "pointKia": "-",
     "notes": "-",
     "registerDate": 20251103
-    },  
-    {
+  },
+  {
     "name": "지프써비스",
     "grade": "1급",
     "priority": 1,
@@ -131,8 +131,8 @@
     "pointKia": "-",
     "notes": "우리금융캐피탈,견인대상만 입고",
     "registerDate": 20250926
-    },
-    {
+  },
+  {
     "name": "베스트포",
     "grade": "1급",
     "priority": 1,
@@ -150,8 +150,8 @@
     "pointKia": "-",
     "notes": "-",
     "registerDate": 20250925
-    },  
-    {
+  },
+  {
     "name": "청주태일카",
     "grade": "1급",
     "priority": 1,
@@ -169,8 +169,8 @@
     "pointKia": "-",
     "notes": "우리금융캐피탈,견인대상만 입고",
     "registerDate": 20250917
-    },  
-    {
+  },
+  {
     "name": "태극모터월드",
     "grade": "1급",
     "priority": 1,
@@ -506,11 +506,11 @@
     "currentIncoming": "ㅇㅇ대",
     "possibleIncoming": "ㅇㅇ대",
     "repairGeneral": "ⅹ",
-    "repairAccident": "○",
+    "repairAccident": "입고중지",
     "pointHyundai": "-",
     "pointKia": "-",
     "notes": "-",
-    "registerDate": "-"
+    "registerDate": 25251204
   },
   {
     "name": "(주)현대오토모터스",
@@ -1481,7 +1481,7 @@
     "notes": "-",
     "registerDate": 20250731
   },
-{
+  {
     "name": "통정모터스",
     "grade": "1급",
     "priority": 1,
@@ -1595,7 +1595,7 @@
     "notes": "-",
     "registerDate": "-"
   },
-    {
+  {
     "name": "넘버원팩토리",
     "grade": "2급",
     "priority": 2,
