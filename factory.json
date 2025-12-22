@@ -1,4 +1,23 @@
 [
+ {
+    "name": "한도모터스",
+    "grade": "1급",
+    "priority": 1,
+    "HCS": "Y",
+    "phone": "010-5878-7100(장현)",
+    "address": "경기 화성시 향남읍 서봉로 246",
+    "lat": "37.1079123",
+    "lng": "126.926939",
+    "monthlyCapacity": "ㅇㅇ대",
+    "currentIncoming": "ㅇㅇ대",
+    "possibleIncoming": "ㅇㅇ대",
+    "repairGeneral": "ⅹ",
+    "repairAccident": "○",
+    "pointHyundai": "-",
+    "pointKia": "-",
+    "notes": "-",
+    "registerDate": 20251222
+  },
   {
     "name": "에이플러스모터스",
     "grade": "1급",
