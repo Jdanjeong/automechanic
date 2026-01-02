@@ -1,4 +1,23 @@
 [
+   {
+    "name": "양재서비스 기아오토큐",
+    "grade": "1급",
+    "priority": 1,
+    "HCS": "Y",
+    "phone": "010-4210-9846 (김기현)",
+    "address": "서울 서초구 남부순환로 342길 94",
+    "lat": 37.4762387,
+    "lng": 127.02795,
+    "monthlyCapacity": "ㅇㅇ대",
+    "currentIncoming": "ㅇㅇ대",
+    "possibleIncoming": "ㅇㅇ대",
+    "repairGeneral": "ⅹ",
+    "repairAccident": "○",
+    "pointHyundai": "-",
+    "pointKia": "○",
+    "notes": "-",
+    "registerDate": 20260102
+  },
   {
     "name": "진성부란자1급종합정비공장",
     "grade": "1급",
