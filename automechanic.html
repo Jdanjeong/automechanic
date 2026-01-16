@@ -127,7 +127,6 @@
           <tr>
             <th>공업사명</th>
             <th>거리(km)</th>
-            <th>현재입고</th>
             <th>일반수리</th>
             <th>사고수리</th>
             <th><img class="point-icon" src="https://i.namu.wiki/i/r6Nfd2W4VJfQJd0rMjfHzjzOjZD2HbWGsxHdaTh4aPqN8S1Dsp74jVYCwdXUcu9ry-6jzm5_JDWl7OmjIEaSMuPAnJr0WATQq0JLGrvgewEiKPC99V9c3MJThzQyXLQEDA2AOBqbn0cn-9tAhR5cnw.svg" alt="현대"></th>
@@ -261,7 +260,6 @@
         tr.innerHTML = `
           <td>${f.name}</td>
           <td>${f.dist.toFixed(2)}</td>
-          <td>${f.currentIncoming ?? '-'}</td>
           <td>${getStatusTag(f.repairGeneral)}</td>
           <td>${getStatusTag(f.repairAccident)}</td>
           <td>${getStatusTag(f.pointHyundai)}</td>
@@ -348,5 +346,6 @@
   </script>
 </body>
 </html>
+
 
 
