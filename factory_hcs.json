@@ -2577,7 +2577,7 @@
     "currentIncoming": "ㅇㅇ대",
     "possibleIncoming": "ㅇㅇ대",
     "repairGeneral": "ⅹ",
-    "repairAccident": "○",
+    "repairAccident": "입고중지-물량과다",
     "pointHyundai": "-",
     "pointKia": "○",
     "notes": "-",
