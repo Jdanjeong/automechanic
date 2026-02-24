@@ -418,7 +418,7 @@
     "registerDate": 20260108
   },
   {
-    "name": "도봉동부현대서비스(현대)",
+    "name": "원진엠엔에스(현대)",
     "grade": "1급",
     "priority": 1,
     "HCS": "Y",
@@ -2430,25 +2430,6 @@
     "pointKia": "-",
     "notes": "-",
     "registerDate": 20250701
-  },
-  {
-    "name": "통정모터스",
-    "grade": "1급",
-    "priority": 1,
-    "HCS": "Y",
-    "phone": "010-9796-0805 (김선우)",
-    "address": "충청남도 천안시 동남구 서부대로 187",
-    "lat": "36.7851265",
-    "lng": "127.128055",
-    "monthlyCapacity": "ㅇㅇ대",
-    "currentIncoming": "ㅇㅇ대",
-    "possibleIncoming": "ㅇㅇ대",
-    "repairGeneral": "ⅹ",
-    "repairAccident": "입고중지-내부사정",
-    "pointHyundai": "-",
-    "pointKia": "-",
-    "notes": "-",
-    "registerDate": 20250731
   },
   {
     "name": "오토월드자동차",
