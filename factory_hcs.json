@@ -2337,25 +2337,6 @@
     "registerDate": 20250701
   },
   {
-    "name": "자일제주서비스",
-    "grade": "1급",
-    "priority": 1,
-    "HCS": "Y",
-    "phone": "010-4597-3264 (김창재)",
-    "address": "제주특별자치도 제주시 선반남2길 63 (화북일동)",
-    "lat": "33.5128761",
-    "lng": "126.5663550",
-    "monthlyCapacity": "ㅇㅇ대",
-    "currentIncoming": "ㅇㅇ대",
-    "possibleIncoming": "ㅇㅇ대",
-    "repairGeneral": "ⅹ",
-    "repairAccident": "○",
-    "pointHyundai": "-",
-    "pointKia": "-",
-    "notes": "-",
-    "registerDate": 20250701
-  },
-  {
     "name": "공주종합모터스",
     "grade": "1급",
     "priority": 1,
