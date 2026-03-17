@@ -1045,25 +1045,6 @@
     "registerDate": "-"
   },
   {
-    "name": "카민랩",
-    "grade": "2급",
-    "priority": 1,
-    "HCS": "Y",
-    "phone": "010-2733-8484 (이천호)",
-    "address": "경기 여주시 농산로 101 ()",
-    "lat": "37.2509149",
-    "lng": "127.6366669",
-    "monthlyCapacity": "ㅇㅇ대",
-    "currentIncoming": "ㅇㅇ대",
-    "possibleIncoming": "ㅇㅇ대",
-    "repairGeneral": "○",
-    "repairAccident": "○",
-    "pointHyundai": "-",
-    "pointKia": "-",
-    "notes": "-",
-    "registerDate": 20250701
-  },
-  {
     "name": "원진자동차",
     "grade": "1급",
     "priority": 1,
