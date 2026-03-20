@@ -1,4 +1,23 @@
 [
+    {
+    "name": "검단자동차정비검사소",
+    "grade": "1급",
+    "priority": 1,
+    "HCS": "Y",
+    "phone": "010-5113-2006 (마재열)",
+    "address": "대구 북구 검단공단로21길 30",
+    "lat": 35.9125590,
+    "lng": 128.610823,
+    "monthlyCapacity": "ㅇㅇ대",
+    "currentIncoming": "ㅇㅇ대",
+    "possibleIncoming": "ㅇㅇ대",
+    "repairGeneral": "ⅹ",
+    "repairAccident": "입고중지",
+    "pointHyundai": "-",
+    "pointKia": "-",
+    "notes": "-",
+    "registerDate": 20260320
+  },
   {
     "name": "스마일공업사",
     "grade": "1급",
