@@ -1,5 +1,24 @@
 [
     {
+    "name": "서면자동차공업사(현대)",
+    "grade": "1급",
+    "priority": 1,
+    "HCS": "Y",
+    "phone": "010-6587-7729 (손수영)",
+    "address": "전남 순천시 서면 순천로 76 (현대자동차서비스센타)",
+    "lat": 34.9968236,
+    "lng": 127.488586,
+    "monthlyCapacity": "ㅇㅇ대",
+    "currentIncoming": "ㅇㅇ대",
+    "possibleIncoming": "ㅇㅇ대",
+    "repairGeneral": "ⅹ",
+    "repairAccident": "○",
+    "pointHyundai": "-",
+    "pointKia": "-",
+    "notes": "-",
+    "registerDate": 20260403
+  },
+    {
     "name": "검단자동차정비검사소",
     "grade": "1급",
     "priority": 1,
