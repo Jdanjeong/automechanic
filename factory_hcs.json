@@ -893,25 +893,6 @@
     "registerDate": 20251223
   },
   {
-    "name": "케이에스자동차공업사",
-    "grade": "1급",
-    "priority": 1,
-    "HCS": "Y",
-    "phone": "010-4368-2000 (김주현)",
-    "address": "전북 전주시 덕진구 상리로 3",
-    "lat": 35.8493572,
-    "lng": 127.101831,
-    "monthlyCapacity": "ㅇㅇ대",
-    "currentIncoming": "ㅇㅇ대",
-    "possibleIncoming": "ㅇㅇ대",
-    "repairGeneral": "ⅹ",
-    "repairAccident": "○",
-    "pointHyundai": "-",
-    "pointKia": "-",
-    "notes": "-",
-    "registerDate": 20251223
-  },
-  {
     "name": "오토엠플러스",
     "grade": "1급",
     "priority": 1,
