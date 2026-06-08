@@ -418,25 +418,6 @@
     "registerDate": 20260121
   },
   {
-    "name": "JKMOTORS",
-    "grade": "1급",
-    "priority": 1,
-    "HCS": "Y",
-    "phone": "010-3552-8461 (박재연)",
-    "address": "경기 남양주시 화도읍 폭포로 215",
-    "lat": 37.6353232,
-    "lng": 127.313201,
-    "monthlyCapacity": "ㅇㅇ대",
-    "currentIncoming": "ㅇㅇ대",
-    "possibleIncoming": "ㅇㅇ대",
-    "repairGeneral": "ⅹ",
-    "repairAccident": "○",
-    "pointHyundai": "-",
-    "pointKia": "-",
-    "notes": "-",
-    "registerDate": 20260121
-  },
-  {
     "name": "화양정비",
     "grade": "1급",
     "priority": 1,
