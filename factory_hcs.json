@@ -1123,7 +1123,7 @@
   {
     "name": "제이에이모터스",
     "grade": "2급",
-    "priority": 1,
+    "priority": "우선입고",
     "HCS": "Y",
     "phone": "010-5796-6002 (김정언)",
     "address": "서울 강서구 공항대로59길61",
@@ -1133,7 +1133,7 @@
     "currentIncoming": "ㅇㅇ대",
     "possibleIncoming": "ㅇㅇ대",
     "repairGeneral": "ⅹ",
-    "repairAccident": "o",
+    "repairAccident": "우선입고",
     "pointHyundai": "-",
     "pointKia": "-",
     "notes": "-",
