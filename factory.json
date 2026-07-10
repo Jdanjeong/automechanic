@@ -342,25 +342,6 @@
     "registerDate": 20260706
   },
   {
-    "name": "수지동차(현대,기아)",
-    "grade": "1급",
-    "priority": 1,
-    "HCS": "Y",
-    "phone": "010-4288-8663(윤애라)",
-    "address": "경기 용인시 수지구 풍덕천로 190번길 15-4",
-    "lat": 37.325098,
-    "lng": 127.102599,
-    "monthlyCapacity": "ㅇㅇ대",
-    "currentIncoming": "ㅇㅇ대",
-    "possibleIncoming": "ㅇㅇ대",
-    "repairGeneral": "ⅹ",
-    "repairAccident": "○",
-    "pointHyundai": "○",
-    "pointKia": "○",
-    "notes": "-",
-    "registerDate": 20260706
-  },
-  {
     "name": "동부모터스(기아)",
     "grade": "1급",
     "priority": 1,
