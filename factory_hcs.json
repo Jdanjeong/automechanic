@@ -1,5 +1,24 @@
 [
     {
+    "name": "현대1급자동차공업사",
+    "grade": "1급",
+    "priority": 0,
+    "HCS": "Y",
+    "phone": "010-4100-9878(위종오)",
+    "address": "경기 남양주시 덕소로 260",
+    "lat": 37.5783390,
+    "lng": 127.224491,
+    "monthlyCapacity": "ㅇㅇ대",
+    "currentIncoming": "ㅇㅇ대",
+    "possibleIncoming": "ㅇㅇ대",
+    "repairGeneral": "ⅹ",
+    "repairAccident": "○",
+    "pointHyundai": "-",
+    "pointKia": "-",
+    "notes": "-",
+    "registerDate": 20260729
+  },
+    {
     "name": "대천자동차공업사",
     "grade": "1급",
     "priority": 1,
